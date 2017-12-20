@@ -1,0 +1,9 @@
+Building DonateCoin
+
+See doc/readme-qt.rst for instructions on building donatecoin-qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of DonateCoin.
+
+See doc/build-*.txt for instructions on building donatecoin,
+the intended-for-services, no-graphical-interface, reference
+implementation of DonateCoin.
