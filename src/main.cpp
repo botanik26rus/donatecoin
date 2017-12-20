@@ -829,6 +829,14 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
+    int64 nSubsidy = 120 * COIN;
+
+    return nSubsidy + nFees;
+}
+
+/*
+int64 static GetBlockValue(int nHeight, int64 nFees)
+{
     int64 nSubsidy = 120 * COIN; //Сколько монет получать за блок
 
 
@@ -839,6 +847,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
     return nSubsidy + nFees; //Видимо монету + вознаграждение за блок
 }
+*/
 //Заменить
 static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // Увеличение сложность (не точно) каждый день
 //static const int64 nTargetTimespan = 0.35 * 24 * 60 * 60; // Увеличение сложность (не точно) 0.35 дня
